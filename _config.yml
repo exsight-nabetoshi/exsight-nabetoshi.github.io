@@ -1,0 +1,45 @@
+theme: my-theme
+livereload: true
+
+collections:
+  authors:
+    output: true
+  news:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news_list_of_each_year"
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+kramdown:
+  hard_wrap: true
+  html_to_native: true
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - publish.sh
+  - server.sh
