@@ -1,8 +1,3 @@
-PATH
-  remote: _themes/matsubara-lab
-  specs:
-    matsubara-lab (1.0.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -315,14 +310,11 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  base64
-  csv
   github-pages (~> 232)
   http_parser.rb (~> 0.6.0)
   jekyll-breadcrumbs-tag
   jekyll-feed (~> 0.6)
   kramdown-parser-gfm
-  matsubara-lab!
   tzinfo (>= 1, < 3)
   tzinfo-data
   wdm (~> 0.1.0)
