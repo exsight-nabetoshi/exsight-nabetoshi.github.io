@@ -1,43 +1,26 @@
 livereload: true
 
 collections:
-  authors:
-    output: true
   news:
     output: true
 
-defaults:
-  - scope:
-      path: ""
-      type: "news"
-    values:
-      layout: "news_list_of_each_year"
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "news"
+#     values:
+#       layout: "news_list_of_each_year"
 
 kramdown:
   hard_wrap: true
   html_to_native: true
 
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
   - jekyll-breadcrumbs-tag
 
 exclude:
   - Gemfile
   - Gemfile.lock
+  - gitpush.sh
   - publish.sh
   - server.sh

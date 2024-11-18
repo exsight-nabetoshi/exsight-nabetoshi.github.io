@@ -23,7 +23,7 @@ ruby "3.2.3"
 group :jekyll_plugins do
   gem "github-pages", "~> 232"
   gem "jekyll-breadcrumbs-tag"
-  gem "jekyll-feed", "~> 0.6"
+  # gem "jekyll-feed", "~> 0.6"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
