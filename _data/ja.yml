@@ -1,0 +1,17 @@
+navigation:
+  main:
+    - name: Home
+      link: "/"
+      class: " d-none d-sm-block"
+    - name: 研究内容
+      link: "/research/all.html"
+      pattern": "/research/*"
+    - name: 研究業績
+      link: "/achievements/paper.html"
+      pattern: "/achievements/*"
+    - name: メンバー
+      link: "/members.html"
+    - name: 研究室紹介
+      link: "/laboratory.html"
+    - name: お問合せ
+      link: "/contact.html"
