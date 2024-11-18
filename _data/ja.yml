@@ -7,7 +7,7 @@ navigation:
       link: "/research/all.html"
       pattern": "/research/*"
     - name: 研究業績
-      link: "/achievements/paper.html"
+      link: "/achievements/papers.html"
       pattern: "/achievements/*"
     - name: メンバー
       link: "/members.html"
