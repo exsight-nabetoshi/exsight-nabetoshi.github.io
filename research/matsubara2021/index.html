@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>シンプレクティック随伴変数法による高速省メモリなNeural ODEの勾配計算 | 北海道大学 大学院情報科学研究院 構造化知能研究室</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="author" content="templatesjungle">
+<meta name="keywords" content="website template">
+<meta name="description" content="website template">
+
+<!--Bootstrap ================================================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--Font Awesome ================================================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--AOS ================================================== -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Originalt ================================================== -->
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="../../image/svg+xml">
+<link rel="apple-touch-icon" href="../../icon.png">
+</head>
+
+<body>
+<header id="header">
+  <div class="container">
+    <div id="header-top"> <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/site-logo-ja.svg" alt="北海道大学 大学院情報科学研究院 情報理工学部門 数理科学分野 構造化知能研究室" width="" height="" /></a>
+      <div class="lang-switcher-wrapper">
+        <div class="lang-switcher"> <a href="../../index-en.html"><span>EN</span></a> <a href="/" class="current"><span>JP</span></a> </div>
+      </div>
+    </div>
+  </div>
+  <nav id="header-nav" class="navbar navbar-expand">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item d-none d-sm-block"> <a class="nav-link" href="../../index.html">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link active" href="../index.html">研究内容</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../../achievements-paper.html">研究業績</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../../members.html">メンバー</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../../laboratory.html">研究室紹介</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../../contact.html">お問合せ</a> </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- page-header -->
+<section id="page-header">
+  <div class="page-header-image">
+    <div class="container">
+      <div class="page-header-title">
+        <h1>研究内容</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- page-main -->
+<section id="page-main" class="padding-small">
+  <div class="container">
+    <p class="text-primary"><small>AI for Science - 科学技術機械学習</small></p>
+    <h2>シンプレクティック随伴変数法による高速省メモリなNeural ODEの勾配計算</h2>
+    <p>ニューラルネットワークで微分方程式(ODE)を学習するneural ODEは，連続時間のダイナミカルシステムや確率分布を，高い精度でモデル化できます．しかし，同じニューラルネットワークを何度も使うため，誤差逆伝播法で訓練するには非常に大きなメモリが必要になります．そのため数値積分で勾配を計算する随伴変数(アジョイント)法が用いられますが，数値誤差を抑えるために今度は大きな計算コストが必要になります．</p>
+    <p>本研究では随伴変数法に用いる数値積分法をシンプレクティックにすることにより，数値誤差なく勾配が計算できる手法(Sanz-Serna, 2016)をベースに，適切なチェックポイント法を組み合わせることで，省メモリ性と高速な勾配計算を両立させました．</p>
+    <p><a href="https://www.dropbox.com/s/4bjax7ht0fx88g4/58_%E6%9D%BE%E5%8E%9F%E5%B4%87.mp4?dl=0" target="_blank">IBISワークショップで予定の動画はこちら．</a></p>
+    <ul>
+      <li>Takashi Matsubara, Yuto Miyatake, and Takaharu Yaguchi, &ldquo;Symplectic Adjoint Method for Exact Gradient of Neural ODE with Minimal Memory,&rdquo; <em>Advances in Neural Information Processing Systems (NeurIPS2021)</em>, 2021. (acceptance rate 26%) (<a href="https://openreview.net/forum?id=46J_l-cpc1W">openreview</a>) (<a href="https://arxiv.org/abs/2102.09750">arXiv</a>)</li>
+      <li>Takashi Matsubara, Yuto Miyatake, and Takaharu Yaguchi, &ldquo;The Symplectic Adjoint Method: Memory-Efficient Backpropagation of Neural-Network-Based Differential Equations,&rdquo; <em>IEEE Transactions on Neural Networks and Learning Systems</em>, 2023. (<a href="https://ieeexplore.ieee.org/document/10045756">link</a>)</li>
+    </ul>
+    <div class="row">
+      <div class="col-md-10 offset-md-1"> <img src="0000.png" width="" height="" alt="" class="img-fluid"/> <img src="0001.png" width="" height="" alt="" class="img-fluid"/> <img src="0002.jpg" width="" height="" alt="" class="img-fluid"/> <img src="0003.png" width="" height="" alt="" class="img-fluid"/> <img src="0004.png" width="" height="" alt="" class="img-fluid"/> <img src="0005.png" width="" height="" alt="" class="img-fluid"/> <img src="0006.png" width="" height="" alt="" class="img-fluid"/> <img src="0007.png" width="" height="" alt="" class="img-fluid"/> <img src="0008.png" width="" height="" alt="" class="img-fluid"/> <img src="0009.png" width="" height="" alt="" class="img-fluid"/> <img src="0010.png" width="" height="" alt="" class="img-fluid"/> <img src="0011.png" width="" height="" alt="" class="img-fluid"/> <img src="0012.png" width="" height="" alt="" class="img-fluid"/> <img src="0013.png" width="" height="" alt="" class="img-fluid"/> <img src="0014.png" width="" height="" alt="" class="img-fluid"/> <img src="0015.png" width="" height="" alt="" class="img-fluid"/> <img src="0016.png" width="" height="" alt="" class="img-fluid"/> </div>
+    </div>
+  </div>
+</section>
+<footer id="footer" class="bg-primary">
+  <div class="container padding-small">
+    <div class="footer-top mb-0 pb-3 border-bottom border-white">
+      <h5>北海道大学 大学院情報科学研究院 <br class="d-block d-sm-none">
+        情報理工学部門 数理科学分野 <br class="d-sm-block d-md-none">
+        構造化知能研究室</h5>
+      <p class="text-white lh-sm mb-0">Structured Artificial Intelligence Lab.,<br>
+        Research Group of Mathematical Science,<br>
+        Division of Computer Science and Information Technology,<br>
+        Faculty of Information Science and Technology, Hokkaido University</p>
+    </div>
+    <div class="footer-bottom d-md-flex justify-content-end pt-3">
+      <p class="text-white mb-0">Copyright &copy; Structured Artificial Intelligence Lab.,Hokkaido University</p>
+    </div>
+  </div>
+</footer>
+<p id="page-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+<script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script type="text/javascript" src="../../js/jquery.3.7.1.js"></script> 
+<script type="text/javascript" src="../../js/custom.js"></script>
+</body>
+</html>

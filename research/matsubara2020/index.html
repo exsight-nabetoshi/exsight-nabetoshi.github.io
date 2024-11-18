@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>自動離散微分を用いたエネルギー保存則・散逸則を満たす深層物理シミュレーション | 北海道大学 大学院情報科学研究院 構造化知能研究室</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="author" content="templatesjungle">
+<meta name="keywords" content="website template">
+<meta name="description" content="website template">
+
+<!--Bootstrap ================================================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--Font Awesome ================================================== -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!--AOS ================================================== -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Originalt ================================================== -->
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<link rel="icon" href="../../favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="../../image/svg+xml">
+<link rel="apple-touch-icon" href="../../icon.png">
+</head>
+
+<body>
+<header id="header">
+  <div class="container">
+    <div id="header-top"> <a class="navbar-brand" href="../../index.html"><img class="logo" src="../../images/site-logo-ja.svg" alt="北海道大学 大学院情報科学研究院 情報理工学部門 数理科学分野 構造化知能研究室" width="" height="" /></a>
+      <div class="lang-switcher-wrapper">
+        <div class="lang-switcher"> <a href="../../index-en.html"><span>EN</span></a> <a href="/" class="current"><span>JP</span></a> </div>
+      </div>
+    </div>
+  </div>
+  <nav id="header-nav" class="navbar navbar-expand">
+    <div class="container">
+      <ul class="navbar-nav">
+        <li class="nav-item d-none d-sm-block"> <a class="nav-link" href="../../index.html">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link active" href="../index.html">研究内容</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../../achievements-paper.html">研究業績</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../../members.html">メンバー</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../../laboratory.html">研究室紹介</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="../../contact.html">お問合せ</a> </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<!-- page-header -->
+<section id="page-header">
+  <div class="page-header-image">
+    <div class="container">
+      <div class="page-header-title">
+        <h1>研究内容</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- page-main -->
+<section id="page-main" class="padding-small">
+  <div class="container">
+    <p class="text-primary"><small>AI for Science - 科学技術機械学習</small></p>
+    <h2>自動離散微分を用いたエネルギー保存則・散逸則を満たす深層物理シミュレーション</h2>
+    <p>機械学習で物理現象をモデル化することは，高速なシミュレーションや未知の現象の発見などに繋がると期待されています．しかし離散時間で行われるシミュレーションでは，エネルギー保存則・散逸則といった物理法則が成り立たず，結果が信頼できなかったり，シミュレーションが破綻したりします．これを回避するため，離散勾配と呼ばれる数値積分の一種が研究されてきましたが，手動での式変形が必要であり，機械学習に適応することは困難でした．</p>
+    <p>本発表は自動離散微分という新たなアルゴリズムを提案します．これによって深層学習でデータから対象のダイナミクスを学習し，エネルギーの保存則・散逸則を厳密に保つシミュレーションを行うことが可能になりました．データから学習できるということは，詳細なメカニズムや方程式が未解明の物理現象（波の伝播や結晶構造の成長など）を高い精度でモデル化し，シミュレーションすることが可能になると期待できます．</p>
+    <p><a href="https://github.com/tksmatsubara/discrete-autograd" target="_blank">ソースコード公開中．</a></p>
+    <p><a href="https://www.dropbox.com/s/flf4wepli2ad7ub/112_%E6%9D%BE%E5%8E%9F%E5%B4%87.mp4?dl=0" target="_blank">IBISワークショップで発表した動画はこちら．</a></p>
+    <ul>
+      <li>Takashi Matsubara, Ai Ishikawa, and Takaharu Yaguchi, &ldquo;Deep Energy-Based Modeling of Discrete-Time Physics,&rdquo; <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2020. (oral 105/9454=1.1%) (<a href="https://neurips.cc/Conferences/2020/Schedule?showEvent=17224">link</a>) (<a href="https://arxiv.org/abs/1905.08604">arXiv</a>)</li>
+    </ul>
+    <div class="row">
+      <div class="col-md-10 offset-md-1"> <img src="0000.png" width="" height="" alt="" class="img-fluid"/> <img src="0001.png" width="" height="" alt="" class="img-fluid"/> <img src="0002.jpg" width="" height="" alt="" class="img-fluid"/> <img src="0003.png" width="" height="" alt="" class="img-fluid"/> <img src="0004.png" width="" height="" alt="" class="img-fluid"/> <img src="0005.png" width="" height="" alt="" class="img-fluid"/> <img src="0006.png" width="" height="" alt="" class="img-fluid"/> <img src="0007.png" width="" height="" alt="" class="img-fluid"/> <img src="0008.png" width="" height="" alt="" class="img-fluid"/> </div>
+    </div>
+  </div>
+</section>
+<footer id="footer" class="bg-primary">
+  <div class="container padding-small">
+    <div class="footer-top mb-0 pb-3 border-bottom border-white">
+      <h5>北海道大学 大学院情報科学研究院 <br class="d-block d-sm-none">
+        情報理工学部門 数理科学分野 <br class="d-sm-block d-md-none">
+        構造化知能研究室</h5>
+      <p class="text-white lh-sm mb-0">Structured Artificial Intelligence Lab.,<br>
+        Research Group of Mathematical Science,<br>
+        Division of Computer Science and Information Technology,<br>
+        Faculty of Information Science and Technology, Hokkaido University</p>
+    </div>
+    <div class="footer-bottom d-md-flex justify-content-end pt-3">
+      <p class="text-white mb-0">Copyright &copy; Structured Artificial Intelligence Lab.,Hokkaido University</p>
+    </div>
+  </div>
+</footer>
+<p id="page-top"><a href="#"><i class="fa fa-chevron-up"></i></a></p>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+<script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+<script type="text/javascript" src="../../js/jquery.3.7.1.js"></script> 
+<script type="text/javascript" src="../../js/custom.js"></script>
+</body>
+</html>
