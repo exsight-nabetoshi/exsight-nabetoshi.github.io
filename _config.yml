@@ -1,8 +1,8 @@
 livereload: true
 
-collections:
-  news:
-    output: true
+# collections:
+#   news:
+#     output: true
 
 # defaults:
 #   - scope:
