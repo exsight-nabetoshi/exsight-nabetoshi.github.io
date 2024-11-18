@@ -3,5 +3,6 @@ _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+gitpush.sh
 server.sh
 vendor
