@@ -1,54 +1,21 @@
 AOS.init();
 
-var logoHeight_before = 0;
-var logoHeight_after = 0;
-var positionChanged = false;
-const positionThreshold = 200;
-const positionOffset = 20;
+const positionThreshold_Low = 185;
+const positionThreshold_High = 200;
+// const positionOffset = 20;
 
-$(function() {
-  logoHeight_before = $(".logo").height();
-});
-
+// for log image transition
 $(window).on("scroll", function() {
   let scrollPosition = $(window).scrollTop();
-  console.log(`scroll position: ${scrollPosition}`);
+  // console.log(`scrollPosition: ${scrollPosition}`);
 
-  if (scrollPosition > positionThreshold) {
-    if (!$(".logo").hasClass("small")) {
-      $(".logo").addClass("small");
-      adjustScrollPosition(scrollPosition);
-    }
+  if (scrollPosition > positionThreshold_High) {
+    $(".logo").addClass("small");
   }
-  else {
-    if ($(".logo").hasClass("small")) {
-      $(".logo").removeClass("small");
-      adjustScrollPosition(scrollPosition);
-    }
-  }
-
-  if (scrollPosition > 100) {
-    pagetop.fadeIn();
-  }
-  else {
-    pagetop.fadeOut();
+  if (scrollPosition < positionThreshold_Low) {
+    $(".logo").removeClass("small");
   }
 });
-
-// // transitionプロパティ
-// $(".logo").on("transitionend webkitTransitionEnd", function() {
-//   console.log("transition end");
-//   let scrollPosition = $(window).scrollTop();
-
-//   if ($(".logo").hasClass("small")) {
-//     let newPosition = scrollPosition + positionOffset;
-//     $(window).scrollTop(newPosition);
-//   }
-//   else {
-//     let newPosition = scrollPosition - positionOffset;
-//     $(window).scrollTop(newPosition);
-//   }
-// });
 
 function adjustScrollPosition(scrollPosition) {
   logoHeight_after = $(".logo").height();
@@ -61,10 +28,19 @@ function adjustScrollPosition(scrollPosition) {
   }
 }
 
-$('#page-top').click(function() {
+// for scroll to top
+var $pagetop = $('#page-top');
+$pagetop.click(function() {
   $('body, html').animate({ scrollTop: 0 }, 300);
   return false;
 });
-
-var pagetop = $('#page-top');
-pagetop.hide();
+$pagetop.hide();
+$(window).on("scroll", function() {
+  let scrollPosition = $(window).scrollTop();
+  if (scrollPosition > 100) {
+    $pagetop.fadeIn();
+  }
+  else {
+    $pagetop.fadeOut();
+  }
+});
