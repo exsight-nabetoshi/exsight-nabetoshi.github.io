@@ -5,10 +5,10 @@ navigation:
       class: " d-none d-sm-block"
     - name: 研究内容
       link: "/research/all.html"
-      pattern": "/research/*"
+      pattern: "/research/"
     - name: 研究業績
       link: "/achievements/papers.html"
-      pattern: "/achievements/*"
+      pattern: "/achievements/"
     - name: メンバー
       link: "/members.html"
     - name: 研究室紹介

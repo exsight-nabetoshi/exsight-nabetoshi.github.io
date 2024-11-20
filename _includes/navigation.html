@@ -2,17 +2,14 @@
 <nav id="header-nav" class="navbar navbar-expand">
   <div class="container">
     <ul class="navbar-nav">
-      {%
-        for item in site.data.ja.navigation.main
-          assign active = ""
-          if page.url == item.link
-            assign active = " active"
-          endif
-          if page.url == "/"
-            assign active = " active"
-          endif
-      %}
-        <li class="nav-item{{ item.class }}"><a class="nav-link{{ active }}" href="{{ item.link }}">{{ item.name }}</a></li>
+      {% for item in site.data.ja.navigation.main %}
+        {% assign active = "" %}
+        {% if page.url == item.link %}
+          {% assign active = " active" %}
+        {% elsif page.url contains item.pattern %}
+          {% assign active = " active" %}
+        {% endif %}
+        <li class="nav-item{{ item.class }}"><a class="nav-link{{ active }}" href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
       {% endfor %}
     </ul>
   </div>
