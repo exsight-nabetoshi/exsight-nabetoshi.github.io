@@ -1,9 +1,11 @@
 <div class="col-lg-3 order-lg-first">
   <ul class="nav side-vertical-menu">
-    <li class="selected"><a href="news.html">2024年</a></li>
-    <li><a href="news2023.html">2023年</a></li>
-    <li><a href="news2022.html">2022年</a></li>
-    <li><a href="news2021.html">2021年</a></li>
-    <li><a href="news2020.html">2020年</a></li>
+    {% for item in site.data.ja.navigation.news %}
+      {% assign selected = "" %}
+      {% if page.url contains item.link %}
+        {% assign selected = " selected" %}
+      {% endif %}
+      <li class="{{ selected }}"><a href="{{ item.link }}">{{ item.name }}</a></li>
+    {% endfor %}
   </ul>
 </div>
