@@ -1,0 +1,17 @@
+navigation:
+  main:
+    - name: Home
+      link: "/en/"
+      class: " d-none d-sm-block"
+    - name: Research
+      link: "/en/research/all.html"
+      pattern": "/en/research/"
+    - name: Publications
+      link: "/en/publications/paper.html"
+      pattern: "/en/publications/"
+    - name: Members
+      link: "/en/members.html"
+    - name: Laboratory
+      link: "/en/laboratory.html"
+    - name: Contact
+      link: "/en/contact.html"
