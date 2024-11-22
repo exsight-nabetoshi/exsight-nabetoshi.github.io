@@ -1,50 +1,50 @@
 navigation:
   main:
     - name: Home
-      link: "/"
+      url: "/"
       class: " d-none d-sm-block"
     - name: 研究内容
-      link: "/research/all.html"
-      pattern: "/research/"
+      url: "/research/ai-for-science.html"
+      dir: "/research/"
     - name: 研究業績
-      link: "/publications/papers.html"
-      pattern: "/publications/"
+      url: "/publications/papers.html"
+      dir: "/publications/"
     - name: メンバー
-      link: "/members.html"
+      url: "/members.html"
     - name: 研究室紹介
-      link: "/laboratory.html"
+      url: "/laboratory.html"
     - name: お問合せ
-      link: "/contact.html"
+      url: "/contact.html"
   research:
     - name: AI for Science
-      link: "all.html"
+      url: "/research/ai-for-science.html"
     - name: 幾何学的深層学習
-      link: "geometric-deep-learning.html"
+      url: "/research/geometric-deep-learning.html"
     - name: ベイズ深層学習
-      link: "bayesian-deep-learning.html"
+      url: "/research/bayesian-deep-learning.html"
     - name: その他のテーマ
-      link: "other-themes.html"
+      url: "/research/other-themes.html"
   publications:
     - name: 原著論文・国際会議論文
-      link: "papers.html"
+      url: "/publications/papers.html"
     - name: 解説論文・著書
-      link: "reviews.html"
+      url: "/publications/reviews.html"
     - name: 講演発表
-      link: "presentations.html"
+      url: "/publications/presentations.html"
     - name: 学位論文
-      link: "theses.html"
+      url: "/publications/theses.html"
     - name: ニュース記事
-      link: "articles.html"
+      url: "/publications/articles.html"
     - name: 研究助成・共同研究
-      link: "collaborations.html"
+      url: "collaborations.html"
   news:
     - name: 2024年
-      link: "2024.html"
+      url: "/news/2024.html"
     - name: 2023年
-      link: "2023.html"
+      url: "/news/2023.html"
     - name: 2022年
-      link: "2022.html"
+      url: "/news/2022.html"
     - name: 2021年
-      link: "2021.html"
+      url: "/news/2021.html"
     - name: 2020年
-      link: "2020.html"
+      url: "/news/2020.html"

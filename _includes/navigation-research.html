@@ -3,10 +3,10 @@
   <div class="container">
     {% for item in site.data.ja.navigation.research %}
       {% assign active = "" %}
-      {% if page.url contains item.link %}
+      {% if page.url contains item.url %}
         {% assign active = " active" %}
       {% endif %}
-      <a href="{{ item.link }}" class="btn btn-default{{ active }}">{{ item.name }}</a>
+      <a href="{{ item.url }}" class="btn btn-default{{ active }}">{{ item.name }}</a>
     {% endfor %}
   </div>
 </section>

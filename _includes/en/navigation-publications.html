@@ -1,0 +1,12 @@
+<!-- page-intro -->
+<section id="page-intro" class="py-4 bg-secondary">
+  <div class="container">
+    {% for item in site.data.en.navigation.publications %}
+      {% assign active = "" %}
+      {% if page.url contains item.url %}
+        {% assign active = " active" %}
+      {% endif %}
+      <a href="{{ item.url }}" class="btn btn-default{{ active }}">{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</section>

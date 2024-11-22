@@ -1,11 +1,11 @@
 <div class="col-lg-3 order-lg-first">
   <ul class="nav side-vertical-menu">
     {% for item in site.data.ja.navigation.news %}
-      {% assign selected = "" %}
-      {% if page.url contains item.link %}
-        {% assign selected = " selected" %}
+      {% assign active = "" %}
+      {% if page.url == item.url %}
+        {% assign active = "active" %}
       {% endif %}
-      <li class="{{ selected }}"><a href="{{ item.link }}">{{ item.name }}</a></li>
+      <li class="{{ active }}"><a href="{{ item.url }}">{{ item.name }}</a></li>
     {% endfor %}
   </ul>
 </div>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja">
+{% include en/head.html %}
+<body>
+  {% include en/header.html %}
+
+  <!-- page-header -->
+  <section id="page-header">
+    <div class="page-header-image">
+      <div class="container">
+        <div class="page-header-title">
+          <h1>{{ page.header_title }}</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {{ content }}
+
+  {% include en/footer.html %}
+  {% include en/foot.html %}
+</body>
+</html>

@@ -17,16 +17,16 @@ $(window).on("scroll", function() {
   }
 });
 
-function adjustScrollPosition(scrollPosition) {
-  logoHeight_after = $(".logo").height();
-  // let diff = logoHeight_after - logoHeight_before;
-  let diff = logoHeight_before - logoHeight_after;
-  if (diff != 0) {
-    let newPosition = scrollPosition + diff;
-    $(window).scrollTop(newPosition);
-    logoHeight_before = logoHeight_after;
-  }
-}
+// function adjustScrollPosition(scrollPosition) {
+//   logoHeight_after = $(".logo").height();
+//   // let diff = logoHeight_after - logoHeight_before;
+//   let diff = logoHeight_before - logoHeight_after;
+//   if (diff != 0) {
+//     let newPosition = scrollPosition + diff;
+//     $(window).scrollTop(newPosition);
+//     logoHeight_before = logoHeight_after;
+//   }
+// }
 
 // for scroll to top
 var $pagetop = $('#page-top');
