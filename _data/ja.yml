@@ -12,7 +12,7 @@ navigation:
     - name: メンバー
       url: "/members.html"
     - name: 研究室紹介
-      url: "/laboratory.html"
+      url: "/aboutus.html"
     - name: お問合せ
       url: "/contact.html"
   research:

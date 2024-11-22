@@ -11,8 +11,8 @@ navigation:
       dir: "/en/publications/"
     - name: Members
       url: "/en/members.html"
-    - name: Laboratory
-      url: "/en/laboratory.html"
+    - name: About Us
+      url: "/en/aboutus.html"
     - name: Contact
       url: "/en/contact.html"
   research:
