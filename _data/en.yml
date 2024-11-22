@@ -4,7 +4,7 @@ navigation:
       url: "/en/"
       class: " d-none d-sm-block"
     - name: Research
-      url: "/en/research/ai-for-science.html"
+      url: "/en/research/scientific-machine-learning.html"
       dir: "/en/research/"
     - name: Publications
       url: "/en/publications/papers.html"
@@ -16,14 +16,12 @@ navigation:
     - name: Contact
       url: "/en/contact.html"
   research:
-    - name: AI for Science
-      url: "/en/research/ai-for-science.html"
-    - name: 幾何学的深層学習
+    - name: Scientific Machine Learning
+      url: "/en/research/scientific-machine-learning.html"
+    - name: Geometric Deep Learning
       url: "/en/research/geometric-deep-learning.html"
-    - name: ベイズ深層学習
+    - name: Bayesian Deep Learning
       url: "/en/research/bayesian-deep-learning.html"
-    - name: その他のテーマ
-      url: "/en/research/other-themes.html"
   publications:
     - name: 原著論文・国際会議論文
       url: "/en/publications/papers.html"

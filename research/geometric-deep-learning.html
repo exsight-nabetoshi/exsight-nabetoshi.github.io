@@ -8,102 +8,182 @@ en_url: /en/research/geometric-deep-learning.html
 {% include navigation-research.html %}
 
 <!-- page-main -->
-<section id="page-main" class="padding-small">
+<section id="page-main" class="researchBox padding-small">
   <div class="container">
     <div class="row">
       <div class="col-lg-9">
-        <h2>幾何学的深層学習</h2><p>幾何学的深層学習(geometric deep learning)とは，学習対象が持つ幾何学的構造に着目した深層学習です． 例えば，画像に写った物体の意味はその位置に依存しません． これを平行移動対称性と言い，畳み込みニューラルネットワークはこの性質を保証するように設計されています． そのため，画像認識において高い性能を発揮できます． この他にも，データの分布が持つトポロジーや計量に注目すれば，より意図通りにデータを生成・編集することができます． 単なる性能の向上に留まらず，信頼性の高い結果を得ることができます．</p></div>
-        <div class="col-lg-3 mb-3"><img src="/assets/images/research02.jpg" class="img-fluid" width="" height="" alt="幾何学的深層学習"></div>
+        <h2>幾何学的深層学習</h2>
+        <p>幾何学的深層学習(geometric deep learning)とは，学習対象が持つ幾何学的構造に着目した深層学習です． 例えば，画像に写った物体の意味はその位置に依存しません． これを平行移動対称性と言い，畳み込みニューラルネットワークはこの性質を保証するように設計されています． そのため，画像認識において高い性能を発揮できます． この他にも，データの分布が持つトポロジーや計量に注目すれば，より意図通りにデータを生成・編集することができます． 単なる性能の向上に留まらず，信頼性の高い結果を得ることができます．</p>
       </div>
-      <h3 class="mt-5 pb-3 border-bottom">数理的構造を考慮した生成モデル</h3>
-        <!-- Card START -->
-        <div class="card card-img-scale py-3">
-          <div class="row">
-            <div class="col-md-3">
-              <!-- Card Image -->
-              <div class="card-img-scale-wrapper">
-                <!-- Image -->
-                <img src="sueyoshi2023/0022.jpg" class="card-img" alt=""> </div>
-            </div>
-            <div class="col-md-9">
-              <!-- Card body -->
-              <div class="card-body">
-                <!-- Title -->
-                <h4 class="card-title mb-3">述語論理を用いたユーザの意図に忠実なテキスト-画像拡散モデル</a></h4>
-              </div>
-            </div>
+      <div class="col-lg-3 mb-3"> <img src="/assets/images/research/research02.jpg" width="" height="" alt="幾何学的深層学習"> </div>
+    </div>
+    <h3 class="mt-5 pb-3 border-bottom">数理的構造を考慮した生成モデル</h3>
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/sueyoshi2023.jpg" alt="">
           </div>
-      </div>
-      <!-- Card END -->
-      <div class="card py-3">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card-img-scale-wrapper">
-              <!-- Card Image -->
-              <img src="aoshima2022/0011.jpg" class="card-img" alt=""> </div>
-          </div>
-          <div class="col-md-9">
-            <!-- Card body -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title mb-3">深層生成モデルのための非線形かつ可換な画像編集</a></h4>
-            </div>
-          </div>
-          <!-- Card END -->
         </div>
-      </div>
-      <div class="card py-3">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card-img-scale-wrapper">
-              <!-- Card Image -->
-              <img src="kimura2020/0001.png" class="card-img" alt=""> </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title mb-3">述語論理を用いたユーザの意図に忠実なテキスト-画像拡散モデル</a></h4>
+            <p>拡散モデルは多様で創造的な画像を高品質に生成することができるが，テキストに基づく生成を行うと，テキストが意図する内容を正確に再現することに失敗することが多い．例えば，指定されたオブジェクトが生成されなかったり，形容詞が意図しないオブジェクトを誤って変更したりすることがある．また，オブジェクト間の所有関係を示す関係が見落とされることも多い．テキストに含まれるユーザの意図は多様であるにもかかわらず，既存の手法ではそのような意図の一部しか解決することができなかった．</p>
+            <p>本研究では，ユーザの意図をより効果的かつ統一的に表現できるフレームワークであるPredicated Diffusionを提案する．この手法では，テキストの意図を述語論理を用いた命題として表現する．そして，拡散モデルの内部にあるアテンションマップの強度がファジィ論理に対応しているとみなし，与えられた命題を充足しているかどうかを評価する微分可能な損失関数を設計する．この損失関数を小さくするように生成過程を制約することで，生成された画像が元の意図に忠実であることを保証する．</p>
+            <p>人間の評価者と訓練済み画像テキストモデルによって評価実験を行い，提案手法が高い画像品質を維持しながら，様々なテキストに忠実な画像を生成できることを実証した．</p>
+            <ul>
+              <li>Kota Sueyoshi and Takashi Matsubara, “Predicated Diffusion: Predicate Logic-Based Attention Guidance for Text-to-Image Diffusion Models,” <em>Proc. of The IEEE/CVF Computer Vision and Pattern Recognition Conference 2024 (CVPR2024)</em>, Seattle, Jun. 2024. (highlight) (<a href="https://arxiv.org/abs/2311.16117">arXiv</a>)</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
-          <div class="col-md-9">
-            <!-- Card body -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title mb-3">トポロジカルな構造を考慮した3D点群生成</a></h4>
-            </div>
-          </div>
-          <!-- Card END -->
-        </div>
-      </div>
-      <h3 class="mt-5 pb-3 border-bottom">幾何学的対称性を考慮した識別モデル</h3>
-      <div class="card py-3">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card-img-scale-wrapper">
-              <!-- Card Image -->
-              <img src="marumo2021/0012.jpg" class="card-img" alt=""> </div>
-          </div>
-          <div class="col-md-9">
-            <!-- Card body -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title mb-3">点群セグメンテーションのための距離同変畳み込み</a></h4>
-            </div>
-          </div>
-          <!-- Card END -->
-        </div>
-      </div>
-      <div class="card py-3">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card-img-scale-wrapper">
-              <!-- Card Image -->
-              <img src="takahashi2017/0000.png" class="card-img" alt=""> </div>
-          </div>
-          <div class="col-md-9">
-            <!-- Card body -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title mb-3">多段畳み込みニューラルネットワークによる幾何学的堅牢性の獲得</a></h4>
-            </div>
-          </div>
-          <!-- Card END -->
         </div>
       </div>
     </div>
+    <!-- Card END -->
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/aoshima2022.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title mb-3">深層生成モデルのための非線形かつ可換な画像編集</a></h4>
+            <p>敵対的生成ネットワーク(GAN)を始めとする深層生成モデルでは，潜在変数に特定の属性ベクトルを足すことで，生成される画像の属性（たとえば，人の顔であれば年齢や髪の長さ）を自由に編集する方法が提案されてきた．しかし，往々にして実データの分布には偏りや歪みがあり，それは対応する潜在変数の分布にも影響する．そのため，単にベクトルを足すという線形な演算では，十分にきれいな編集ができない．</p>
+            <p>そこで，潜在空間中に非線形なベクトル場を定義し，その流れに沿って潜在変数を動かすことで，画像を編集するという方法も提案されている．このような方法はたしかに編集の品質を向上させることができる．しかし，一般に複数のベクトル場は非可換であるため，編集する属性の順序が変われば編集された結果が変わるという不都合が起こる．例えば，「顔を横に向けてから笑わせる」ことと「顔を笑わせてから横に向ける」ことは同一であることが望ましい．</p>
+            <p>そこで本研究では，潜在空間中に可換なベクトル場を定義し，編集結果が編集の順序に影響されないことを保証する．可換なベクトル場は曲線座標系 (curvilinear coordinate) と等価であるため，深層学習を用いてデカルト座標系を適切に歪めることで実装する．この手法をdeep curvilinear editing (DeCurvEd) と名付けた．</p>
+            <p>GANと組み合わせて行った実証実験では，DeCurvEdが順序に依らない編集を可能にするだけでなく，異なる属性が適切に分離されて学習されること (disentanglement) も促進することがわかった．</p>
+            <ul>
+              <li>Takehiro Aoshima and Takashi Matsubara, “Deep Curvilinear Editing: Commutative and Nonlinear Image Manipulation for Pretrained Deep Generative Model,” <em>Proc. of The IEEE/CVF Computer Vision and Pattern Recognition Conference 2023 (CVPR2023)</em>, Vancouver, Jun. 2023. (<a href="https://arxiv.org/abs/2211.14573">arXiv</a>)</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card END -->
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/kimura2020.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title mb-3">トポロジカルな構造を考慮した3D点群生成</a></h4>
+            <p>点群とは3次元データの表現方法の一つであり，ボクセルに比べ高解像度かつメッシュに比べ取り扱いが容易という特徴があります．点群の生成モデルを学習することは，再構成や超解像など幅広いタスクで役立つことが期待されています．点群は通常ある物体の表面を表現しているため，空洞であったり穴が空いているといった，トポロジー的に特徴のある構造を持っています．しかし，既存の生成モデルはこのような構造を考慮せず，一つの塊として生成するため，空洞が正確に表現できなかったり，突起物が潰れてしまったりしていました．</p>
+            <p>そこであたかも多様体を複数の局所座標系で覆うかのように，条件付き生成モデルを用いて点群を部分ごとに生成する方法を提案しました．Gumbel-Softmaxアプローチを用いたモンテカルロ法によって，条件数が増えても計算量は増加しないように設計しています．既存研究を比較して，空洞や突起物を持ち，構造の異なる様々な3D点群を高い精度での生成が可能であることを示しました．</p>
+            <ul>
+              <li>Takumi Kimura, Takashi Matsubara, and Kuniaki Uehara, “Topology-Aware Flow-Based Point Cloud Generation,” <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, vol. 32, no. 11, pp. 7967-7982, 2022. (<a href="https://ieeexplore.ieee.org/document/9791323">link</a>)</li>
+              <li>Takumi Kimura, Takashi Matsubara, Kuniaki Uehara, “ChartPointFlow for Topology-Aware 3D Point Cloud Generation,” <em>Proc. of ACM International Conference on Multimedia (ACMMM2021)</em>, Oct., 2021. (acceptance rate 542/1,942=27.9%) (<a href="https://arxiv.org/abs/2012.02346">arXiv</a>)</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card END -->
+
+    <h3 class="mt-5 pb-3 border-bottom">幾何学的対称性を考慮した識別モデル</h3>
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/marumo2021.jpg"alt=""></a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title mb-3">点群セグメンテーションのための距離同変畳み込み</a></h4>
+            <p>自動運転を実現するには，正確でロバストな環境理解が求められる．そのためのタスクとして， LiDARを用いた点群のセグメンテーションの注目度が高く，様々な手法が提案されている．その中でも， LiDAR点群を球面投射して2次元の距離画像に変換してから畳み込みニューラルネットワークを適用するというアプローチが，その効率の良さと設計のしやすさから主流になっている．</p>
+            <p>ところで画像の中では，遠くの物体は近くの物体と比べて小さく表現される．そのため畳み込みニューラルネットワークの中で，異なる種類の畳み込みフィルタが反応する．つまりあらゆる大きさに対応した畳み込みフィルタを学習する必要があり，畳み込みニューラルネットワークの効率性・汎化性が低下している可能性がある．</p>
+            <p>そこで，物体までの距離と画像中のスケール比の間に反比例の関係が成り立つことに着目し，偏微分方程式に現れる差分作用素を応用し，異なる大きさに同じ重みフィルタを用いることで，スケール同変性を向上させる距離同変畳み込みを提案する．</p>
+            <p>既存のLiDAR点群セグメンテーション用ネットワークに提案手法を組み込むことで，性能の向上や，実際に同変性があることが確認できた．</p>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card END -->
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/takahashi2017.png"alt=""></a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title mb-3">多段畳み込みニューラルネットワークによる幾何学的堅牢性の獲得</a></h4>
+            <p>ディープラーニングにおいて近年特に研究の盛んな分野のひとつが，GPUの普及に基づいた多層の畳み込みニューラルネットワーク(CNN)の開発である．このような多層構造のCNNは特に画像識別分野で大きな成果を残してきた.このCNNは被写物体の微小な平行移動に対して堅牢であるという，平行移動不変性を持つことが知られている．しかし，その他の幾何学的変化である，拡大縮小，回転には脆弱であることが知られており，識別精度向上の障害となっている.そこで，私の研究では複数の拡大縮小された入力から得られる特徴情報を，多段構造の新しいネットワークによって等価に扱い，拡大縮小不変性の獲得と，それによる更なる精度の向上を目指した．</p>
+            <ul>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, “A Novel Weight-Shared Multi-Stage CNN for Scale Robustness,” <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, vol. 29, no. 4, pp. 1090-1101, 2019. (<a href="http://ieeexplore.ieee.org/document/8330011">link</a>) (<a href="https://arxiv.org/abs/1702.03505">arXiv</a>)</li>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, “Scale-Invariant Recognition by Weight-Shared CNNs in Parallel,” <em>Proc. of The 9th Asian Conference on Machine Learning (ACML 2017)</em>, Seoul, Nov. 2017. (acceptance rate 41/172=0.238) (<a href="http://proceedings.mlr.press/v77/takahashi17a.html">link</a>).</li>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, “Multi-Stage Convolutional Neural Networks for Robustness to Scale Transformation,” <em>Proc. of The 2017 International Symposium on Nonlinear Theory and its Applications (NOLTA2017)</em>, Cancun, Dec. 2017, pp. 692-695, 5056.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card END -->
+  </div>
   </div>
 </section>

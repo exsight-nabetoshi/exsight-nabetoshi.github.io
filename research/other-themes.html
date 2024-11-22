@@ -3,70 +3,165 @@ layout: page
 title: その他のテーマ | 研究内容
 header_title: 研究内容
 lang: ja
-en_url: /en/research/other-themes.html
+en_url: /en/research/scientific-machine-learning.html
 ---
 {% include navigation-research.html %}
 
 <!-- page-main -->
-<section id="page-main" class="padding-small">
+<section id="page-main" class="researchBox padding-small">
   <div class="container">
     <div class="row">
       <div class="col-lg-9">
         <h2>その他のテーマ</h2>
         <p>ほかにも，深層学習の構造や学習法とデータに対して，適切な制約や補助を与える研究を実施しています．</p>
       </div>
-      <div class="col-lg-3 mb-3"><img src="/assets/images/research04.jpg" class="img-fluid" width="" height="" alt="その他のテーマ"></div>
+      <div class="col-lg-3 mb-3">
+        <img src="/assets/images/research/research04.jpg" width="" height="" alt="その他のテーマ">
+      </div>
     </div>
+
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
+          <div class="card-img-wrapper">
             <!-- Card Image -->
-            <img src="sueyoshi2023/0022.jpg" class="card-img" alt=""> </div>
+            <img src="images/nakai2020.png" alt="">
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">述語論理を用いたユーザの意図に忠実なテキスト-画像拡散モデル</a></h4>
+            <h4 class="card-title mb-3">注意機構を持った深層ニューラルネットワークの勾配探索</a></h4>
+            <p>ニューラルネットワーク（NN）のアーキテクチャの設計を手動で行うには専門的知識と多大な労力を要する．</p>
+            <p>NNのアーキテクチャの設計を自動で行うニューラルアーキテクチャ探索（NAS）の分野の発達により，画像分類タスクにおいて高い精度を発揮するアーキテクチャを短時間で得られるようになってきている．</p>
+            <p>画像分類タスクにおいては一般的に畳み込みニューラルネットワーク（CNN）が用いられるが，その主要な演算は畳み込みとpoolingである．</p>
+            <p>従来のNASの手法ではこれを考慮し，演算の選択肢として畳み込みとpoolingのみを含めている．</p>
+            <p>一方近年，画像認識の分野において，従来のCNNに新たに注意機構を挿入することでネットワークの表現力を向上させ，パラメータ数の増加量を抑えながらもより高い精度を発揮している．</p>
+            <p>そこで本研究では，従来の畳込みなどの演算に加えて注意機構が挿入されたCNNを探索する手法を提案する．</p>
+            <p>提案手法では勾配法で探索を行うDARTSをベースとし，得られたCNNはCIFAR-10及びCIFAR-100を用いた画像分類タスクにおいて，DARTSで得られたものよりパラメータ数を抑えつつも精度が向上した．</p>
+            <p><a href="https://github.com/chomin/Att-DARTS" target="_blank">ソースコード公開中．</a></p>
+            <ul>
+              <li>Kohei Nakai, Takashi Matsubara, and Kuniaki Uehara, “Neural Architecture Search for Convolutional Neural Networks with Attention,” <em>IEICE Transactions on Information and Systems</em>, vol. E104.D, no. 2, 2021.</li>
+              <li>Kohei Nakai, Takashi Matsubara, and Kuniaki Uehara, “Att-DARTS: Differentiable Neural Architecture Search for Attention,” <em>Proc. of The 2020 International Joint Conference on Neural Networks (IJCNN2020)</em>, Glasgow (Online), Jul. 2020.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
+    <!-- Card END -->
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
+          <div class="card-img-wrapper">
             <!-- Card Image -->
-            <img src="aoshima2022/0011.jpg" class="card-img" alt=""> </div>
+            <img src="images/takahashi2018.png" alt="">
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">深層生成モデルのための非線形かつ可換な画像編集</a></h4>
+            <h4 class="card-title mb-3">ランダムな画像切り抜きと貼り付けを用いたデータ拡張</h4>
+            <p>膨大なパラメータを持つ深層畳み込みニューラルネットワーク(Convolutional Neural NetWork; CNN)は，画像処理の分野において大きな成果をあげている. しかし，学習データに対して膨大すぎるパラメータを持つ深層CNNは，常に過学習を起こすリスクを負う. この問題を解決するために，学習データの擬似的な水増しを行う，data augmentationの手法がいくつか提案されてきた. 画像反転,くり抜き,拡大縮小や色彩情報の変換などのdata augmentationは，学習データに対する過学習を抑制し，深層CNNのより高い性能の実現に貢献してきた. 本研究では，このようなdata augmentationの手法をさらに発展させ，4枚の異なる画像をそれぞれランダムにくり抜き，それらを貼り合わせて新たな学習画像を構成する新たなdata augmentationの手法を提案し，画像処理の更なる高精度化を実現する．</p>
+            <p>本研究は総務省 戦略的情報通信研究開発推進事業(SCOPE)の委託を受けて行われた．</p>
+            <p>Githubにて<a href="https://github.com/jackryo/ricap" target="_blank">ソースコードを公開しています．</a></p>
+            <p>Qiitaにて紹介や検証の記事を書いていただいています．</p>
+            <ul>
+              <li><a href="https://qiita.com/4Ui_iUrz1/items/e35e5f9210bbef693d05" target="_blank">CIFAR-10でSOTAなエラー率2.19%を達成したdata augmentation手法 RICAP を試してみた</a></li>
+              <li><a href="https://qiita.com/koshian2/items/60f4c2289f68103116b9" target="_blank">RICAPのパラメーターをコサインカーブでゆらして更に使い倒す</a></li>
+            </ul>
+            <p>関連文献</p>
+            <ul>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, “Data Augmentation using Random Image Cropping and Patching for Deep CNNs,” <em>IEEE Transactions on Circuits and Systems for Video Technology</em>, vol. 30, no. 9, pp. 2917-2931, 2020. (<a href="https://ieeexplore.ieee.org/document/8795523">link</a>) (<a href="https://arxiv.org/abs/1811.09030">arXiv</a>)</li>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, “RICAP: Random Image Cropping and Patching Data Augmentation for Deep CNNs,” <em>Proc. of The 10th Asian Conference on Machine Learning (ACML2018)</em>, Beijing, Nov. 2018, pp. 786-798. (acceptance rate 57/230=0.248) (<a href="http://proceedings.mlr.press/v95/takahashi18a.html">link</a>)</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
+    <!-- Card END -->
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
+          <div class="card-img-wrapper">
             <!-- Card Image -->
-            <img src="kimura2020/0001.png" class="card-img" alt=""> </div>
+            <img src="images/doss2018.png" alt="">
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">トポロジカルな構造を考慮した3D点群生成</a></h4>
+            <h4 class="card-title mb-3">強化学習と模倣学習の融合による人間らしいエージェント</a></h4>
+            <p>強化学習によるエージェントは，環境と対話しているうちに試行錯誤を重ねて学習し，様々な課題が解決できる．例えば，囲碁や自動運転，テレビゲームなどがあげられる．しかしながら，強化学習エージェントは収益を最大化するように訓練されるため高い性能を示すが，実用化する際には，このような性能指標以外のことも考慮する必要がある．例えば，テレビゲームにおけるNPCを強化学習エージェントにすると，そのエージェントが強すぎるため，プレイヤーがゲームをあまり楽しむことができない可能性がある．また，自動運転に応用する際には，高い性能を目指して訓練された強化学習エージェントは，激しく加減速したり急に曲がったりして，隣接する車や歩行者などに不安を与える恐れがある．そこで，人間らしいエージェントを設計する必要がある．</p>
+            <ul>
+              <li>Rousslan Fernand Julien Dossa, Xinyu Lian, Hirokazu Nomoto, Takashi Matsubara, and Kuniaki Uehara, “Hybrid of Reinforcement and Imitation Learning for Human-Like Agents,” <em>IEICE Transactions on Information and Systems</em>, vol. E103.D, no. 9, pp. 1960-1970, 2020. (<a href="https://www.jstage.jst.go.jp/article/transinf/E103.D/9/E103.D_2019EDP7298/_article/-char/en">link</a>)</li>
+              <li>Rousslan Fernand Julien Dossa, Xinyu Lian, Hirokazu Nomoto, Takashi Matsubara, and Kuniaki Uehara, “A Human-Like Agent Based on a Hybrid of Reinforcement and Imitation Learning,” <em>Proc. of The 2019 International Joint Conference on Neural Networks (IJCNN2019)</em>, Budapest, Jul. 2019. (<a href="https://ieeexplore.ieee.org/document/8852026">link</a>)</li>
+            </ul>
+            <p>一方で，模倣学習では，人間エキスパートに提供されるデータ上でエージェントにそのエキスパートの方策を学習させるため，人間らしい態度が期待できる．ただし，学習される方策は提供されたデータに制限され，模倣学習エージェントの性能はエキスパートの性能を越えることができない．</p>
+            <p>それに応じて，強化学習の高い性能を保ったまま人間らしいエージェントを設計するため，強化学習と模倣学習の融合モデルを提案する．提案した融合モデルは強化学習の高い性能と人間のような振る舞いを示した．実験として，離散行動空間のケースとしてAtariゲームに適用した．さらに，自動運転のような実社会にも応用可能であることを実証するために，連続行動空間のTorcsという運転シミュレータで実験を行った．評価のため，性能評価と感性試験を行い，提案モデルが人間の模倣エージェントより高い性能を示し，強化学習エージェントより人間らしく振る舞うことを実証した．</p>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
+    <!-- Card END -->
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card-img-wrapper">
+            <!-- Card Image -->
+            <img src="images/kumolog2019.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title mb-3">くもろぐ～全天球画像のデータ収集と雲形と状態判定</a></h4>
+            <p>海上気象観測は安全な航海に不可欠であり，日本では一般船舶においても観測結果を気象庁に報告することが義務付けられている．しかし，気象測器では雲の種類（雲形）と雲量を判断できないため，現時点では目視に頼らざるを得ず，画像に基づく自動識別に強いニーズが存在する．日本国外において雲形の自動判断を目指した研究は存在するものの，日本の気象環境及び気象庁への報告内容とは必ずしも一致しない．そのため，日本のニーズを満たす人工知能システムの開発を計画した．</p>
+            <p>はじめに全天球画像を撮影してデータサンプルを収集するための撮影デバイスを開発した．実際に船舶に搭載し，中規模のデータを収集，雲の層（下層，中層，上層）ごとに雲形と状態をラベル付けした．このデータセットをもとに，深層畳み込みニューラルネットワークを構築し学習することで，雲形・状態ともに0.9を超える精度を達成した．</p>
+            <p>また本研究成果の一部はiOS及びAndroid用アプリ『くもろぐ』としてリリースした．<a href="https://itunes.apple.com/jp/app/くもろぐ/id1411784823" target="_blank">App Store</a>，<a href="https://play.google.com/store/apps/details?id=com.sptvjsat.kumolog" target="_blank">Google Play</a>にてダウンロード可能．<a href="http://www.kobe-u.ac.jp/research_at_kobe/NEWS/collaborations/2018_10_30_01.html" target="_blank">神戸大学プレスリリース</a>，<a href="https://www3.nhk.or.jp/news/business_tokushu/2018_1107.html" target="_blank">NHK WEB NEWS</a>，<a href="https://www.asahi.com/articles/ASLC83VC5LC8PIHB016.html" target="_blank">朝日新聞</a>にも取り上げられた．&lt;/li&gt;本研究はスカパーJSAT株式会社様，バニヤン・パートナーズ株式会社様，株式会社神戸デジタル・ラボ様，神戸大学 大学院海事科学研究科 大澤教授との共同研究として実施された．<a href="https://www.nikkan.co.jp/articles/view/00445894" target="_blank">日刊工業新聞</a>にも取り上げられた．</p>
+            <ul>
+              <li>稲村直樹, 藤原宏太, 天方貴久, 釣文男, 中西波瑠, 小渕浩希, 大澤輝夫, 松原崇, 上原邦昭, “全天球画像と日射量データによる太陽光発電量予測,” <em>2020年度 第34回人工知能学会全国大会(JSAI2020)</em>, 熊本, 6月, 2020.</li>
+              <li>森川 優, 中西 波瑠, 稲村 直樹, 近藤 伸明, 小渕 浩希, 大澤 輝夫, 松原 崇, 上原 邦昭, “全天球画像のデータ収集と雲形と状態判定,” <em>2018年度 第32回人工知能学会全国大会(JSAI2018)</em>, 2A4-01, 鹿児島, 6月, 2018.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card END -->
   </div>
 </section>

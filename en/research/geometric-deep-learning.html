@@ -8,102 +8,81 @@ ja_url: /research/geometric-deep-learning.html
 {% include en/navigation-research.html %}
 
 <!-- page-main -->
-<section id="page-main" class="padding-small">
+<section id="page-main" class="researchBox padding-small">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-9">
-        <h2>幾何学的深層学習</h2><p>幾何学的深層学習(geometric deep learning)とは，学習対象が持つ幾何学的構造に着目した深層学習です． 例えば，画像に写った物体の意味はその位置に依存しません． これを平行移動対称性と言い，畳み込みニューラルネットワークはこの性質を保証するように設計されています． そのため，画像認識において高い性能を発揮できます． この他にも，データの分布が持つトポロジーや計量に注目すれば，より意図通りにデータを生成・編集することができます． 単なる性能の向上に留まらず，信頼性の高い結果を得ることができます．</p></div>
-        <div class="col-lg-3 mb-3"><img src="/assets/images/research02.jpg" class="img-fluid" width="" height="" alt="幾何学的深層学習"></div>
-      </div>
-      <h3 class="mt-5 pb-3 border-bottom">数理的構造を考慮した生成モデル</h3>
-        <!-- Card START -->
-        <div class="card card-img-scale py-3">
-          <div class="row">
-            <div class="col-md-3">
-              <!-- Card Image -->
-              <div class="card-img-scale-wrapper">
-                <!-- Image -->
-                <img src="sueyoshi2023/0022.jpg" class="card-img" alt=""> </div>
-            </div>
-            <div class="col-md-9">
-              <!-- Card body -->
-              <div class="card-body">
-                <!-- Title -->
-                <h4 class="card-title mb-3">述語論理を用いたユーザの意図に忠実なテキスト-画像拡散モデル</a></h4>
-              </div>
-            </div>
+    <h2>Geometric Deep Learning</h2>
+    <h3 class="mt-5 pb-3 border-bottom">Structure-aware Data Generation</h3>
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/kimura2021.jpg" alt=""></a>
           </div>
-      </div>
-      <!-- Card END -->
-      <div class="card py-3">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card-img-scale-wrapper">
-              <!-- Card Image -->
-              <img src="aoshima2022/0011.jpg" class="card-img" alt=""> </div>
-          </div>
-          <div class="col-md-9">
-            <!-- Card body -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title mb-3">深層生成モデルのための非線形かつ可換な画像編集</a></h4>
-            </div>
-          </div>
-          <!-- Card END -->
         </div>
-      </div>
-      <div class="card py-3">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card-img-scale-wrapper">
-              <!-- Card Image -->
-              <img src="kimura2020/0001.png" class="card-img" alt=""> </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <p>Deep learning models often neglect structures inherent in data (e.g., the topology of pont clouds).
+            Incorporating such structure enables natural and refined artificial data generation.</p>
+            <ul>
+              <li>Kota Sueyoshi and Takashi Matsubara, "Predicated Diffusion: Predicate Logic-Based Attention Guidance for Text-to-Image Diffusion Models," <span class="publication-name">Proc. of The IEEE/CVF Computer Vision and Pattern Recognition Conference 2024 (CVPR2024)</span>, Seattle, Jun. 2024. <a href="https://arxiv.org/abs/2311.16117" target="_blank" class="link-arxiv">arXiv</a></li>
+              <li>Takehiro Aoshima and Takashi Matsubara, "Deep Curvilinear Editing: Commutative and Nonlinear Image Manipulation for Pretrained Deep Generative Model," <span class="publication-name">Proc. of The IEEE/CVF Computer Vision and Pattern Recognition Conference 2023 (CVPR2023)</span>, Jun., 2023. <a href="https://arxiv.org/abs/2211.14573" target="_blank" class="link-arxiv">arXiv</a></li>
+              <li>Takumi Kimura, Takashi Matsubara, and Kuniaki Uehara, "Topology-Aware Flow-Based Point Cloud Generation," <span class="publication-name">IEEE Transactions on Circuits and Systems for Video Technology</span>, vol. 32, no. 11, pp. 7967-7982, 2022. <a href="https://ieeexplore.ieee.org/document/9791323" target="_blank" class="link-ieee">link</a></li>
+              <li>Takumi Kimura, Takashi Matsubara, and Kuniaki Uehara, "ChartPointFlow for Topology-Aware 3D Point Cloud Generation," <span class="publication-name">Proc. of ACM International Conference on Multimedia (ACMMM2021)</span>, Virtual, Oct., 2021. (Oral) <a href="https://dl.acm.org/doi/10.1145/3474085.3475589" target="_blank" class="link">link</a><a href="https://arxiv.org/abs/2012.02346" target="_blank" class="link-arxiv">arXiv</a></li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
-          <div class="col-md-9">
-            <!-- Card body -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title mb-3">トポロジカルな構造を考慮した3D点群生成</a></h4>
-            </div>
-          </div>
-          <!-- Card END -->
-        </div>
-      </div>
-      <h3 class="mt-5 pb-3 border-bottom">幾何学的対称性を考慮した識別モデル</h3>
-      <div class="card py-3">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card-img-scale-wrapper">
-              <!-- Card Image -->
-              <img src="marumo2021/0012.jpg" class="card-img" alt=""> </div>
-          </div>
-          <div class="col-md-9">
-            <!-- Card body -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title mb-3">点群セグメンテーションのための距離同変畳み込み</a></h4>
-            </div>
-          </div>
-          <!-- Card END -->
-        </div>
-      </div>
-      <div class="card py-3">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="card-img-scale-wrapper">
-              <!-- Card Image -->
-              <img src="takahashi2017/0000.png" class="card-img" alt=""> </div>
-          </div>
-          <div class="col-md-9">
-            <!-- Card body -->
-            <div class="card-body">
-              <!-- Title -->
-              <h4 class="card-title mb-3">多段畳み込みニューラルネットワークによる幾何学的堅牢性の獲得</a></h4>
-            </div>
-          </div>
-          <!-- Card END -->
         </div>
       </div>
     </div>
+    <!-- Card END -->
+    <h3 class="mt-5 pb-3 border-bottom">Symmetry-aware Data Recognition</h3>
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/takahashi2017.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <p>Objects captured in images represent the same meaning regardless of their position.
+            This property is referred to as translation symmetry.
+            Some data is also symmetric to scaling and reflection.
+            Deep learning models that can effectively handle these properties are capable of recognizing data with high accuracy even from limited datasets.</p>
+            <ul>
+              <li>Hidetaka Marumo and Takashi Matsubara, "Scale-Equivariant Convolution for Semantic Segmentation of Depth Image," <span class="publication-name">Nonlinear Theory and Its Applications, IEICE</span>, vol. 15, no. 1 pp. 36-53, 2024.<a href="https://www.jstage.jst.go.jp/article/nolta/15/1/15_36/_article/-char/en" target="_blank" class="link-jstage">link</a></li>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, "Data Augmentation using Random Image Cropping and Patching for Deep CNNs," <span class="publication-name">IEEE Transactions on Circuits and Systems for Video Technology</span>, vol. 30, no. 9, pp. 2917-2931, 2020. <a href="https://ieeexplore.ieee.org/document/8795523" target="_blank" class="link-ieee">link</a><a href="https://arxiv.org/abs/1811.09030" target="_blank" class="link-arxiv">arXiv</a></li>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, "A Novel Weight-Shared Multi-Stage CNN for Scale Robustness," <span class="publication-name">IEEE Transactions on Circuits and Systems for Video Technology</span>, vol. 29, no. 4, pp. 1090-1101, 2019. <a href="http://ieeexplore.ieee.org/document/8330011" target="_blank" class="link-ieee">link</a><a href="https://arxiv.org/abs/1702.03505" target="_blank" class="link-arxiv">arXiv</a></li>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, "RICAP: Random Image Cropping and Patching Data Augmentation for Deep CNNs," <span class="publication-name">Proc. of The 10th Asian Conference on Machine Learning (ACML2018)</span>, Beijing, Nov. 2018, pp. 786-798. <a href="http://proceedings.mlr.press/v95/takahashi18a.html" target="_blank" class="link">link</a></li>
+              <li>Ryo Takahashi, Takashi Matsubara, and Kuniaki Uehara, "Scale-Invariant Recognition by Weight-Shared CNNs in Parallel," <span class="publication-name">Proc. of The 9th Asian Conference on Machine Learning (ACML 2017)</span>, Seoul, Nov. 2017. <a href="http://proceedings.mlr.press/v77/takahashi17a.html" target="_blank" class="link">link</a>.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card END -->
   </div>
 </section>

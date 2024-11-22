@@ -8,102 +8,260 @@ en_url: /en/research/bayesian-deep-learning.html
 {% include navigation-research.html %}
 
 <!-- page-main -->
-<section id="page-main" class="padding-small">
+<section id="page-main" class="researchBox padding-small">
   <div class="container">
     <div class="row">
       <div class="col-lg-9">
         <h2>ベイズ深層学習</h2>
         <p>ベイズ深層学習(Bayesian deep learning)とは，ベイズ的モデル化に基づいて深層学習を設計する手法です．なかでも深層生成モデルは，データ間の因果関係や依存関係をベイジアンネットワークというグラフ形式で表し，その関係を深層学習で実装したものです．いずれも，出力結果の根拠の可視化，意思決定の信頼性（不確実性）の定量化，小規模データの効率的な解析などが可能になります．また生成AIの基盤技術の一部でもあります．</p>
       </div>
-      <div class="col-lg-3 mb-3"><img src="/assets/images/research03.jpg" class="img-fluid" width="" height="" alt="ベイズ深層学習"></div>
+      <div class="col-lg-3 mb-3">
+        <img src="/assets/images/research/research03.jpg" width="" height="" alt="ベイズ深層学習">
+      </div>
     </div>
     <h3 class="mt-5 pb-3 border-bottom">深層生成モデル</h3>
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="sueyoshi2023/0022.jpg" class="card-img" alt=""> </div>
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/tashiro2018.png" alt="">
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">述語論理を用いたユーザの意図に忠実なテキスト-画像拡散モデル</a></h4>
+            <h4 class="card-title mb-3">脳機能画像解析による医療診断のための深層生成モデル</a></h4>
+            <p>脳の活動パターンを測定する脳機能画像は，問診によって行われる精神疾患の診断を補佐し，客観的・定量的な基準を与えられるものと期待されています．しかし，データの収集には莫大なコストがかかり，世界的に大きなデータセットであっても数十人～千人分のデータしかなく，深層学習を用いたビッグデータ解析を用いることが容易ではありません．また性別や年齢による脳の見た目上の個人差は，病気と関連があるとされる活動パターンよりもよほど顕著であり，よほど工夫をしない限り，誤った根拠を使って診断をしてしまいます．例えば自閉スペクトラム症は男性に多いため，男性的な特徴(脳の大きさなど)と，病気の原因を混同してしまいます．また，脳機能画像を撮影する機材は病院ごとに異なっており，その機材の違いも，大きな混乱を招くことが知られています．</p>
+            <p>そこで，ベイズ的深層学習の一種である深層生成モデルを用います．脳機能画像の原因として，活動パターンを想定し，活動パターンの原因が精神疾患であると考えます．もう一つ別の原因として，年齢や性別といった個人差や機材の環境差があるというモデル化を行います．活動パターンは刻々と変化しますが，疾患や個人差は変化しません．すると，脳機能画像に現れる様々な情報が，どの原因に紐付けられるのか，データから自動的に学習され，精神疾患と個人差・環境差を高い精度で区別することができるようになります．</p>
+            <p>たった150人の小規模なデータであっても，深層生成モデルは既存の特徴抽出に依存したヒューリスティックな手法よりも高い精度で診断を下すことができました．またそれだけでなく，どの部位が原因であるのか可視化することができるほか，性別や年齢による診断精度の偏りを補正することができました．</p>
+            <p>本研究は総務省 戦略的情報通信研究開発推進事業(SCOPE)の委託を受けて行われました．</p>
+            <ul>
+              <li>Takashi Matsubara, Koki Kusano, Tetsuo Tashiro, Ken’ya Ukai, and Kuniaki Uehara, “Deep Generative Model of Individual Variability in fMRI Images of Psychiatric Patients,” <em>IEEE Transactions on Biomedical Engineering</em>, 2020. (accepted) (<a href="https://ieeexplore.ieee.org/document/9139314">link</a>)</li>
+              <li>Koki Kusano, Tetsuo Tashiro, Takashi Matsubara, and Kuniaki Uehara, “Deep Generative State-Space Modeling of FMRI Images for Psychiatric Disorder Diagnosis,” <em>Proc. of The 2019 International Joint Conference on Neural Networks (IJCNN2019)</em>, Budapest, Jul. 2019. (<a href="https://ieeexplore.ieee.org/document/8852448">link</a>)</li>
+              <li>Takashi Matsubara, Tetsuo Tashiro, and Kuniaki Uehara, “Deep Neural Generative Model of Functional MRI Images for Psychiatric Disorder Diagnosis,” <em>IEEE Transactions on Biomedical Engineering</em>, vol. 66, no. 10, pp. 2768-2779, 2019. (<a href="https://ieeexplore.ieee.org/document/8627955">link</a>) (<a href="https://arxiv.org/abs/1712.06260">arXiv</a>)</li>
+              <li>Takashi Matsubara, Tetsuo Tashiro, and Kuniaki Uehara, “Structured Deep Generative Model of FMRI Signals for Mental Disorder Diagnosis,” <em>Proc. of The 21st International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI2018)</em>, Granada, Sep. 2018, pp. 258-266. (acceptance rate 372/1,068=0.348) (<a href="https://link.springer.com/chapter/10.1007%2F978-3-030-00931-1_30">link</a>)</li>
+              <li>Tetsuo Tashiro, Takashi Matsubara, and Kuniaki Uehara, “Deep Neural Generative Model for fMRI Image Based Diagnosis of Mental Disorder,” <em>Proc. of The 2017 International Symposium on Nonlinear Theory and its Applications (NOLTA2017)</em>, Cancun, Dec. 2017, pp. 700-703, 5169.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
+    <!-- Card END -->
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="aoshima2022/0011.jpg" class="card-img" alt=""> </div>
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/akita2017.png" alt="">
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">深層生成モデルのための非線形かつ可換な画像編集</a></h4>
+            <h4 class="card-title mb-3">言語情報の深層生成モデルを用いた株価動向推定</a></h4>
+            <p>本研究では，深層生成モデルを用いてニュース記事から株価動向の日次予測を行う手法を提案する．複数ニュースそれぞれが持つ影響の大きさを考慮する．まずニュース記事が持つ情報を固定長のベクトルで表現するために，Paragraph Vectorと呼ばれる手法を用いる．これにより言語が持つ情報を十分に表現できる．次に株価情報と言語情報が持つ関係性を深層生成モデルで表現し，分散表現を基にパラメータを学習する．生成モデルを用いることにより，ニュース記事を生成する潜在変数や確率過程を表現でき，その表現に必要なパラメータの過学習を抑えることができる．実際に，日本市場とアメリカ市場の2市場を対象に，株価動向の2値分類を行い，本手法の有効性を示した．</p>
+            <ul>
+              <li>Takashi Matsubara, Ryo Akita, and Kuniaki Uehara, “Stock Price Prediction by Deep Neural Generative Model of News Articles,” <em>IEICE Transactions on Information and Systems</em>, Vol.E101-D, No.4, pp.901-908, 2018. (<a href="https://www.jstage.jst.go.jp/article/transinf/E101.D/4/E101.D_2016IIP0016/_article/-char/ja">link</a>)</li>
+              <li>Ryo Akita, Akira Yoshihara, Takashi Matsubara, and Kuniaki Uehara, “Deep Learning for Stock Prediction Using Numerical and Textual Information,” <em>Proc. of the 15th IEEE/ACIS International Conference on Computer and Information Science (ICIS 2016)</em>, Okayama, Jun. 2016, pp. 945-950. (<a href="http://ieeexplore.ieee.org/document/7550882">link</a>)</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
+    <!-- Card END -->
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="kimura2020/0001.png" class="card-img" alt=""> </div>
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/masuda2018.png" alt="">
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">トポロジカルな構造を考慮した3D点群生成</a></h4>
+            <h4 class="card-title mb-3">多様な仮想空間を構築するための画像モダリティ変換</a></h4>
+            <p>深層学習を始めとした機械学習が様々なベンチマーク問題で目覚ましい成果を上げたのに伴い，機械学習システムを自動運転やロボット制御のような実問題に応用する研究が盛んに行われている．実問題への応用には機械学習システムの訓練や検証が必要であり，そのためには物体を検出するための画像データと正解データのような，現実空間でのデータを大量に収集する必要がある．また充分な訓練と検証のためには単なるデータ量だけでなく，データの多様性が必要である．例えば，昼の晴天時で十分な精度を示す物体認識システムが，夜の雨天時に同等の性能を示す保証はない．そして雨天のデータを収集するには，実際に夜に雨が降るのを待つしかない．また大雨や雷雨，霧など様々なケースが考えられ，そのようなデータ収集しつくすためには莫大な金銭的・人的コストが要求される．</p>
+            <p>一つの解決策として，環境シミュレータを構築し，その中で機械学習システムの訓練や検証することが考えられる．しかし環境シミュレータと現実空間の差異によって，訓練の性能や検証の妥当性は大きく損なわれる．もう一つの解決策として，ドメイン適応を用いる手法が盛んに研究されている．ドメイン適応とはあるドメイン（たとえば環境シミュレータ）で得られたデータが持つドメイン独自の情報に手を加えし，他のドメイン（たとえば現実空間）から得られたデータと同じように扱えるようにする手法である．この場合は，シミュレータで大量にデータを収集し，得られた画像を事後処理で現実空間で得られたデータのように加工することを意味する．ただやはり高性能なシミュレータを開発する必要があり，そのコストは無視し難い．</p>
+            <p>もう一つの解決策として，現実空間で得られた１つの画像から，様々な環境下の画像を複数生成することが考えれる．例えば，昼と夜という画像のモダリティ変換をドメイン変換問題として捉え，高い性能を発揮しているpix2pix[Isola 17] という手法が存在する．これは変換前と変換後の両ドメインにデータ対（ペア画像）が必要であり，定点カメラには適用可能だが車載カメラでは適用できないなど，範囲が限られている．一方，絵画と写真という画像のモダリティ変換をペア画像なしで行えるCycle-GAN[Zhu 17] という手法が提案されている．本研究では，自動運転用の物体検出システムを想定し，車載カメラから見た道路画像のデータセットであるKAIST Mul-tispectral Pedestrian Detection Benchmark[Hwang 15] をベンチマークとし，画像の夜と昼というモダリティを相互に変換するタスクを論じる．既存手法であるpix2pixとCycle-GANの問題点を指摘した上で，それらを解決する手法を提案する．</p>
+            <p>本研究は株式会社 豊田中央研究所との共同研究として実施された</p>
+            <ul>
+              <li>益田慎太, 松原崇, 上原邦昭, “多様な仮想空間を構築するための画像モダリティ変換,” <em>2018年度 第32回人工知能学会全国大会(JSAI2018)</em>, 4M1-04, 鹿児島, 6月, 2018.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
+    <!-- Card END -->
     <h3 class="mt-5 pb-3 border-bottom">不確実性定量化</h3>
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="marumo2021/0012.jpg" class="card-img" alt=""> </div>
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/sato2020.png" alt="">
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">点群セグメンテーションのための距離同変畳み込み</a></h4>
+            <h4 class="card-title mb-3">グループデータ生成モデルを用いたFew-shot異常検知</a></h4>
+            <p>「異常検出」は画像分析において重要なタスクである．特に「画像に基づく異常検出」は，工業製品の不良品検査や医療画像からの病変の診断などのアプリケーションが考えられる．この目的のために，与えられたデータの確からしさを推定する確率モデルがよく用いられる．特に高次元データである画像に対しては，複雑な構造を捉えるために，深層学習に基づく確率モデルである深層生成モデルが有効である．</p>
+            <p>深層生成モデルの学習には膨大なデータが必要なので，新製品に対して用いることは出来ない．仮に用いた場合，新製品は訓練データセットに存在しないため，正常なデータであっても不当に低い確からしさを割り当ててしまい，誤検出をもたらす．そこで，既存の製品で十分に訓練した深層生成モデルを上手く流用し，数少ない新製品のデータを用いて異常検知が出来ないだろうか．この問題設定を「few-shot異常検出」と呼ぶ．</p>
+            <p>各製品は型番ごとにグループを形成していると考える．既存の製品は既知グループに対応し，新商品は未知グループに対応する．そして，グループごとに固有の特徴と，個々の製品に固有の特徴に分離する深層生成モデルを提案する．このモデルは，未知グループにある異常サンプルを効果的に検出でき，また正常・異常の基準となる閾値の決定も自動的に行えることを示した．</p>
+            <p>本研究は地球快適化インスティテュート様との共同研究『工場の屋根画像から錆の検出を可能にする、再学習不要な異常検知アルゴリズムの研究』の一環として実施された．</p>
+            <ul>
+              <li>Kazuki Sato, Satoshi Nakata, Takashi Matsubara, and Kuniaki Uehara, “Few-shot Anomaly Detection using Deep Generative Models for Grouped Data,” <em>IEICE Transactions on Information and Systems</em>, vol.E105-D, no.2, pp.436-440, 2022. (<a href="https://www.jstage.jst.go.jp/article/transinf/E105.D/2/E105.D_2021EDL8063/_article/-char/en/">link</a>)</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
+    <!-- Card END -->
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="takahashi2017/0000.png" class="card-img" alt=""> </div>
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/tachibana2018.jpg" alt="">
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">多段畳み込みニューラルネットワークによる幾何学的堅牢性の獲得</a></h4>
+            <h4 class="card-title mb-3">深層生成モデルによる非正則化異常度を用いた異常検知</a></h4>
+            <p>異常検知とは多くのデータから仲間外れを見つけることです．例えば工場の生産ラインから不良品を見つけたり，監視カメラ映像から不審者を見つけたり，様々な応用例が考えられます．一般にはデータごとに頻出度(尤度)を計算し，それが低いデータは非典型的である，つまり異常であるとみなします．深層生成モデルは深層学習を用いて構築した確率モデルであり，画像のような生データの尤度を測ることができます．そのため，多くの分野で異常検知の手法として使われています．</p>
+            <p>より具体的には，深層生成モデルは与えられた画像を非可逆圧縮し，元通りに復元するように学習されます．非可逆圧縮なので必ず情報は欠損しますので，深層生成モデルは頻出する典型的なデータを優先して復元するように学習し，非典型的なデータの復元を諦めます．すると，復元できなかったデータ＝非典型的なデータ＝異常，という考えが成り立ちます．</p>
+            <p>しかし，実際にはそのとおりには行きません．復元できない状態を「数理モデルに不確実性がある」と表現します．そしてその原因は２つあります．１つは「経験的不確実性(epistemic uncertainty)」と呼ばれるもので，学習(＝経験)が不足しているために，数理モデルがデータを正しく表現できない状態です．深層生成モデルは数の多い典型的なデータを優先して学習するため，非典型的なデータの学習は疎かになります．つまり非典型的なデータに対する学習が不足してる状態であり，異常検知はこの経験的不確実性を使っていると考えられます．もう一つは「偶然的不確実性(aleatoric uncertainty)」です．こちらはデータにそもそもノイズが多い，複雑な形をしている，といったモデル側に非がない不確実性です．そして，現実世界のデータはしばしばこの偶然的不確実性が非常に高いという状態が起こります．</p>
+            <p>例えば工場で生産される金属部品には，平べったい表面と，ネジ穴や勘合部分などの複雑な形状をした部分があります．平べったい表面に傷が入ればそれは経験的不確実性です．しかしネジ穴や勘合部分は形状が複雑すぎて，すでに高い偶然的不確実性を持っています．すると異常検知において，表面の傷を見落とし，ネジ穴を誤検出するということが起こります．</p>
+            <p>そこで深層生成モデルの尤度を計算する式を改良し，経験的不確実性に関する項と偶然的不確実性に関する項に分けることができました．この経験的不確実性に関する項を非正則化異常度と名付け，異常検知に使うと，見た目の複雑さに惑わされず，高い精度で異常検知を行うことができました．</p>
+            <p>本研究はアイシン・エィ・ダブリュ株式会社様との共同研究として実施された．本研究に関する発表は2018年度 人工知能学会 全国大会優秀賞 (一般セッション口頭部門) を受賞しました．</p>
+            <p><a href="https://qiita.com/shinmura0/items/811d01384e20bfd1e035">Qiitaに解説記事を書いてくださった方がいらっしゃいました．</a>ありがとうございます．</p>
+            <ul>
+              <li>Takashi Matsubara, Kazuki Sato, Kenta Hama, Ryosuke Tachibana, and Kuniaki Uehara, “Deep Generative Model using Unregularized Score for Anomaly Detection with Heterogeneous Complexity,” <em>IEEE Transactions on Cybernetics</em>, vol. 52, no. 6, pp. 5161-5173, 2022. (<a href="https://arxiv.org/abs/1807.05800">arXiv</a>) (<a href="https://ieeexplore.ieee.org/document/9244214">link</a>)</li>
+              <li>Takashi Matsubara, Ryosuke Tachibana, and Kuniaki Uehara, “Anomaly Machine Component Detection by Deep Generative Model with Unregularized Score,” <em>Proc. of The 2018 International Joint Conference on Neural Networks (IJCNN2018)</em>, Rio de Janeiro, Jul. 2018, pp.4067-4074. (<a href="https://ieeexplore.ieee.org/document/8489169&quot;">link</a>)</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
-  </div>
+    <!-- Card END -->
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/hama2019.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title mb-3">ベイズ的深層学習を用いた画像テキスト検索における信頼性評価</a></h4>
+            <p>深層ニューラルネットワークを含む,多くの機械学習アルゴリズムで出力結果の信頼性をいかにして評価するかは大きな課題である.分類問題,回帰問題においては, ベイジアンニューラルネットワークの出力の不確実性によって信頼性を評価する方法が提案されている.しかし, 画像テキスト検索は分類や回帰とは異なるタスクであり, 信頼性の評価方法を検討する必要がある.本研究では画像テキスト検索を分類問題としての解釈(事後分布の不確実性),回帰問題としての解釈(埋め込み点の不確実性)により二つの不確実性を定義した.その結果, 二つの不確実性でモデル平均による検索精度の向上が見られた. また,事後分布の分散が大きいデータをクエリーから除くことで,大幅な精度改善が見られたことから,分類問題としての不確実性が信頼性の評価に適していることを示した.</p>
+            <p>本研究は総務省SCOPEの委託，科学研究費補助金の助成を受けて実施された.</p>
+            <ul>
+              <li>Kenta Hama, Takashi Matsubara, Kuniaki Uehara, and Jianfei Cai, “Exploring Uncertainty Measures for Image-Caption Embedding-and-Retrieval Task,” <em>ACM Transactions on Multimedia Computing, Communications, and Applications</em>, vol. 17, no. 2, article no. 46, 2021. (<a href="https://arxiv.org/abs/1904.08504">arXiv</a>)</li>
+              <li>Kenta Hama, Takashi Matsubara, and Kuniaki Uehara, “Image-Caption Retrieval with Evaluating Uncertainties,” <em>Proc. of The 7th Japan-Korea Joint Workshop on Complex Communication Sciences (JKCCS)</em>, Pyengonchang, Jan. 2019.</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card END -->
+    <!-- Card START -->
+    <div class="card py-3">
+      <div class="row">
+        <div class="col-md-3">
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/ukai2018.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-9">
+          <!-- Card body -->
+          <div class="card-body">
+            <!-- Title -->
+            <h4 class="card-title mb-3">ハイパーネットによる畳み込みニューラルネットワークの暗黙的事後分布推定</a></h4>
+            <p>ニューラルネットワークは複雑な表現を学習することができ，様々なタスクで高い性能を示している．しかし，学習に利用できるデータは限られているため，過学習を起こしやすい．過学習を防ぐためにニューラルネットワークの学習を正則化することは，最も重要な課題の1つである．本研究では，大規模な畳み込みニューラルネットワークを対象とし，ハイパーネットを用いて，パラメータの事後分布を暗黙的に推定することで学習を正則化する．また，パラメータの分布が学習されることから，モデル平均化により識別精度を向上させることができる．</p>
+            <p>本研究は総務省 戦略的情報通信研究開発推進事業(SCOPE)の委託を受けて行われた．</p>
+            <ul>
+              <li>Kenya Ukai, Takashi Matsubara, and Kuniaki Uehara, “Bayesian Estimation and Model Averaging of Convolutional Neural Networks by Hypernetwork,” <em>Nonlinear Theory and Its Applications, IEICE</em>, Vol.E10-N, No.1, 2019. (<a href="https://www.jstage.jst.go.jp/article/nolta/10/1/10_45/_article/-char/ja">link</a>)</li>
+              <li>Kenya Ukai, Takashi Matsubara, and Kuniaki Uehara, “Hypernetwork-based Implicit Posterior Estimation and Model Averaging of Convolutional Neural Networks,” <em>Proc. of The 10th Asian Conference on Machine Learning (ACML2018)</em>, Beijing, Nov. 2018, pp. 176-191. (acceptance rate 57/230=0.248) (<a href="http://proceedings.mlr.press/v95/ukai18a.html">link</a>)</li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card END -->
   </div>
 </section>

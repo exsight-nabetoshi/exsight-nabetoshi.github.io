@@ -8,102 +8,76 @@ ja_url: /research/bayesian-deep-learning.html
 {% include en/navigation-research.html %}
 
 <!-- page-main -->
-<section id="page-main" class="padding-small">
+<section id="page-main" class="researchBox padding-small">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-9">
-        <h2>ベイズ深層学習</h2>
-        <p>ベイズ深層学習(Bayesian deep learning)とは，ベイズ的モデル化に基づいて深層学習を設計する手法です．なかでも深層生成モデルは，データ間の因果関係や依存関係をベイジアンネットワークというグラフ形式で表し，その関係を深層学習で実装したものです．いずれも，出力結果の根拠の可視化，意思決定の信頼性（不確実性）の定量化，小規模データの効率的な解析などが可能になります．また生成AIの基盤技術の一部でもあります．</p>
-      </div>
-      <div class="col-lg-3 mb-3"><img src="/assets/images/research03.jpg" class="img-fluid" width="" height="" alt="ベイズ深層学習"></div>
-    </div>
-    <h3 class="mt-5 pb-3 border-bottom">深層生成モデル</h3>
+    <h2>Bayesian Deep Learning</h2>
+    <h3 class="mt-5 pb-3 border-bottom">Deep Generative Models</h3>
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="sueyoshi2023/0022.jpg" class="card-img" alt=""> </div>
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/tashiro2018.png" alt=""></a>
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">述語論理を用いたユーザの意図に忠実なテキスト-画像拡散モデル</a></h4>
+            <p>Generative models extract detailed features for reconstruction and are less susceptible to overfitting to a prominent subset of features. Also, they can incorporate prior knowledge about the causal relationship between factors and enable unbiased decision-making.</p>
+            <ul>
+              <li>Takashi Matsubara, Koki Kusano, Tetsuo Tashiro, Ken'ya Ukai, and Kuniaki Uehara, "Deep Generative Model of Individual Variability in fMRI Images of Psychiatric Patients," <span class="publication-name">IEEE Transactions on Biomedical Engineering</span>, vol. 68, no. 2, pp. 592-605, 2021. <a href="https://ieeexplore.ieee.org/document/9139314" target="_blank" class="link-ieee">link</a></li>
+              <li>Takashi Matsubara, Tetsuo Tashiro, and Kuniaki Uehara, "Structured Deep Generative Model of FMRI Signals for Mental Disorder Diagnosis," <span class="publication-name">Proc. of The 21st International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI2018)</span>, Granada, Sep. 2018, pp. 258-266. (acceptance rate 372/1,068=0.348) <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-00931-1_30" target="_blank" class="link">link</a></li>
+              <li>Takashi Matsubara, Ryo Akita, and Kuniaki Uehara, "Stock Price Prediction by Deep Neural Generative Model of News Articles," <span class="publication-name">IEICE Transactions on Information and Systems</span>, Vol.E101-D, No.4, pp.901-908, 2018. <a href="https://www.jstage.jst.go.jp/article/transinf/E101.D/4/E101.D_2016IIP0016/_article/-char/ja" target="_blank" class="link-jstage">link</a></li>
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
+    <!-- Card END -->
+    <h3 class="mt-5 pb-3 border-bottom">Uncertainty Quantification</h3>
+    <!-- Card START -->
     <div class="card py-3">
       <div class="row">
         <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="aoshima2022/0011.jpg" class="card-img" alt=""> </div>
+          <!-- Card Image -->
+          <div class="card-img-wrapper">
+            <!-- Image -->
+            <img src="images/tachibana2018.png" alt=""></a>
+          </div>
         </div>
         <div class="col-md-9">
           <!-- Card body -->
           <div class="card-body">
             <!-- Title -->
-            <h4 class="card-title mb-3">深層生成モデルのための非線形かつ可換な画像編集</a></h4>
+            <p>The real-world is not fully deterministic, and the machine learning methods is preferable to quantity the uncertainty in their decision making, allowing for human intervention if necessary. The uncertainty quantification is also useful to identify outliers, with applications such as quality control for manufactured products.</p>
+            <ul>
+              <li>Takashi Matsubara, Kazuki Sato, Kenta Hama, Ryosuke Tachibana, and Kuniaki Uehara, "Deep Generative Model using Unregularized Score for Anomaly Detection with Heterogeneous Complexity," <span class="publication-name">IEEE Transactions on Cybernetics</span>, vol. 52, no. 6, pp. 5161-5173, 2022. <a href="https://ieeexplore.ieee.org/document/9244214" target="_blank" class="link-ieee">link</a><a href="https://arxiv.org/abs/1807.05800" target="_blank" class="link-arxiv">arXiv</a></li>
+              <li>Kazuki Sato, Satoshi Nakata, Takashi Matsubara, and Kuniaki Uehara, "Few-shot Anomaly Detection using Deep Generative Models for Grouped Data," <span class="publication-name">IEICE Transactions on Information and Systems</span>, vol.E105-D, no.2, pp.436-440, 2022. <a href="https://www.jstage.jst.go.jp/article/transinf/E105.D/2/E105.D_2021EDL8063/_article/-char/en/" target="_blank" class="link-jstage">link</a></li>
+              <li>Kenta Hama, Takashi Matsubara, Kuniaki Uehara, and Jianfei Cai, "Exploring Uncertainty Measures for Image-Caption Embedding-and-Retrieval Task," <span class="publication-name">ACM Transactions on Multimedia Computing, Communications, and Applications</span>, vol. 17, no. 2, article no. 46, 2021. <a href="https://dl.acm.org/doi/10.1145/3425663" target="_blank" class="link">link</a><a href="https://arxiv.org/abs/1904.08504" target="_blank" class="link-arxiv">arXiv</a></li>
+              <li>Kenya Ukai, Takashi Matsubara, and Kuniaki Uehara, "Hypernetwork-based Implicit Posterior Estimation and Model Averaging of Convolutional Neural Networks," <span class="publication-name">Proc. of The 10th Asian Conference on Machine Learning (ACML2018)</span>, Beijing, Nov. 2018, pp. 176-191. <a href="http://proceedings.mlr.press/v95/ukai18a.html" target="_blank" class="link">link</a></li>
+
+            </ul>
+            <p>
+              <a href="#" class="btn btn-default btn-tag pub-paper" target="_blank">Paper</a>
+              <a href="#" class="btn btn-default btn-tag pub-slide" target="_blank">Slide</a>
+              <a href="#" class="btn btn-default btn-tag pub-poster" target="_blank">Poster</a>
+              <a href="#" class="btn btn-default btn-tag pub-movie" target="_blank">Movie</a>
+              <a href="#" class="btn btn-default btn-tag pub-link" target="_blank">Link</a>
+            </p>
           </div>
         </div>
-        <!-- Card END -->
       </div>
     </div>
-    <div class="card py-3">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="kimura2020/0001.png" class="card-img" alt=""> </div>
-        </div>
-        <div class="col-md-9">
-          <!-- Card body -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title mb-3">トポロジカルな構造を考慮した3D点群生成</a></h4>
-          </div>
-        </div>
-        <!-- Card END -->
-      </div>
-    </div>
-    <h3 class="mt-5 pb-3 border-bottom">不確実性定量化</h3>
-    <div class="card py-3">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="marumo2021/0012.jpg" class="card-img" alt=""> </div>
-        </div>
-        <div class="col-md-9">
-          <!-- Card body -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title mb-3">点群セグメンテーションのための距離同変畳み込み</a></h4>
-          </div>
-        </div>
-        <!-- Card END -->
-      </div>
-    </div>
-    <div class="card py-3">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="card-img-scale-wrapper">
-            <!-- Card Image -->
-            <img src="takahashi2017/0000.png" class="card-img" alt=""> </div>
-        </div>
-        <div class="col-md-9">
-          <!-- Card body -->
-          <div class="card-body">
-            <!-- Title -->
-            <h4 class="card-title mb-3">多段畳み込みニューラルネットワークによる幾何学的堅牢性の獲得</a></h4>
-          </div>
-        </div>
-        <!-- Card END -->
-      </div>
-    </div>
-  </div>
+    <!-- Card END -->
   </div>
 </section>
