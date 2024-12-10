@@ -23,7 +23,7 @@ navigation:
     - name: Bayesian Deep Learning
       url: "/en/research/bayesian-deep-learning.html"
   publications:
-    - name: Publications
+    - name: Papers
       url: "/en/publications/papers.html"
     - name: Book Chapters
       url: "/en/publications/reviews.html"
