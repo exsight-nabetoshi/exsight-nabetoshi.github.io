@@ -28,7 +28,7 @@ navigation:
     - name: Book Chapters
       url: "/en/publications/reviews.html"
     - name: Talks
-      url: "/en/publications/presentations.html"
+      url: "/en/publications/talks.html"
   news:
     - name: 2024
       url: "/en/news/2024.html"

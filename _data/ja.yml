@@ -23,20 +23,20 @@ navigation:
     - name: ベイズ深層学習
       url: "/research/bayesian-deep-learning.html"
     - name: その他のテーマ
-      url: "/research/other-themes.html"
+      url: "/research/various-projects.html"
   publications:
     - name: 原著論文・国際会議論文
       url: "/publications/papers.html"
     - name: 解説論文・著書
       url: "/publications/reviews.html"
     - name: 講演発表
-      url: "/publications/presentations.html"
+      url: "/publications/talks.html"
     - name: 学位論文
       url: "/publications/theses.html"
     - name: ニュース記事
-      url: "/publications/articles.html"
+      url: "/publications/press.html"
     - name: 研究助成・共同研究
-      url: "collaborations.html"
+      url: "/publications/grants.html"
   news:
     - name: 2024年
       url: "/news/2024.html"

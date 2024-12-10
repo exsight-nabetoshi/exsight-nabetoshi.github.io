@@ -1,12 +1,12 @@
 <!-- navigation -->
 <section id="page-intro" class="py-4 bg-secondary">
   <div class="container">
-    {% for item in site.data.ja.navigation.research %}
-      {% assign active = "" %}
-      {% if page.url contains item.url %}
-        {% assign active = " active" %}
-      {% endif %}
+    {% for item in site.data.ja.navigation.research -%}
+      {%- assign active = "" -%}
+      {%- if page.url contains item.url -%}
+        {%- assign active = " active" -%}
+      {%- endif -%}
       <a href="{{ item.url }}" class="btn btn-default{{ active }}">{{ item.name }}</a>
-    {% endfor %}
+    {%- endfor %}
   </div>
 </section>

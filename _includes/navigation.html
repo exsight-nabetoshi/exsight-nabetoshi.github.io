@@ -2,15 +2,15 @@
 <nav id="header-nav" class="navbar navbar-expand">
   <div class="container">
     <ul class="navbar-nav">
-      {% for item in site.data.ja.navigation.main %}
-        {% assign active = "" %}
-        {% if page.url == item.url %}
-          {% assign active = " active" %}
-        {% elsif page.url contains item.dir %}
-          {% assign active = " active" %}
-        {% endif %}
+      {%- for item in site.data.ja.navigation.main -%}
+        {%- assign active = "" -%}
+        {%- if page.url == item.url -%}
+          {%- assign active = " active" -%}
+        {%- elsif page.url contains item.dir -%}
+          {%- assign active = " active" -%}
+        {%- endif %}
         <li class="nav-item{{ item.class }}"><a class="nav-link{{ active }}" href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
-      {% endfor %}
+      {%- endfor %}
     </ul>
   </div>
 </nav>
